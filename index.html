@@ -1,0 +1,200 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>中央氣象局數值天氣預報</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <!--Google fonts links-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="assets/css/plugins.css" />
+        <link rel="stylesheet" href="assets/css/roboto-webfont.css" />
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+
+        <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!--Home page style-->
+        <header id="home" class="home">
+            <div class="overlay-fluid-block">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="home-wrapper">
+                            <div class="col-md-10 col-md-offset-1">
+                                <div class="home-content">
+                                    <h1>中央氣象局數值天氣預報</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>			
+            </div>
+        </header>
+
+        <!-- Sections -->
+        <section id="features" class="features sections">
+            <div class="container">
+                <div class="row">
+                    <div class="main_features_content2">
+                        <div class="col-sm-6">
+                            <div class="single_features_left text-center">
+                                <img src="assets/images/feature-2.jpg" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 margin-top-60">
+                            <div class="single_features_right ">
+                                <h2>系級與加值產品</h2>
+                                <p>全球系級模式 - 亞洲區域 - 850百帕溫度場</p>
+                                <ul>
+                                    <li>全球系集預報模式主要是利用全球預報模式的資料作為初始場，透過隨機擾動參數趨勢法(SPPT)加入不同的初始擾動，此方法是在物理趨勢項中使每個time step產生隨機擾動，以達到系集預報的結果，為單一模式的系集系統。系集資料的水平解析度約為41km，共預報45天。</li>
+                                    <li>
+                                        <a href="https://npd.cwb.gov.tw/NPD/products_display/product?menu_index=2">資料來源 : 中央氣象局數值天氣預報</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        
+        </section><!--End of Features 2 Section -->
+        <section id="features" class="features sections">
+            <div class="container"  >
+                <p class='title2' heigh='200' width="800">2022-05-02 08:00:00 TMP:surface</p>
+                <div class="row">
+                    <div class="col-sm-13 margin-top-30">
+                        <div class="single_features_left">
+                            
+                            <h2 class="fig_text" width="200">緯度 : 24.0 經度 : 120.0</h2>   
+                        </div>
+                    </div>
+                    <div class="col-sm-13 margin-top-30">
+                        <div class="single_features_right">
+                            <svg id="content" class='svg_content' width="800" height="450">
+                                <svg id="contour" width="800" height="450"></svg>  
+                                <g class="map" width="800" height="450"></g>
+                                <svg id="eventLayer" width="800" height="450">
+                                    <g class="focus"></g>
+                                </svg>                                             
+                            </svg>                          
+                        </div>
+                    </div>
+                    <div class ="legend">
+                    </div>                       
+                </div>
+                <svg id="content_2" class='svg_content' width="1400" height="450">
+                    <svg id="plot" width="1200" height="400" ></svg>                     
+                </svg>                                                      
+                <a id="noaaURL" href = "https://www.ncei.noaa.gov/products/weather-climate-models/global-ensemble-forecast">資料來源 : NOAA Global Ensemble Forecast System</a>   
+            </div>
+                 
+        </section><!--End of Features 2 Section -->
+
+
+        <section id="service" class="service2 sections lightbg">
+            <div class="container">
+                <div class="row">
+                    <div class="main_service2">
+                        <div class="head_title text-center">
+                            <h2>圖表改良與分析說明</h2>
+                        </div>
+
+                        <div class="service_content">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="single_service2">
+                                    <div class="single_service_left">
+                                        <img src="assets/images/flaticon.png" alt="" />
+                                    </div>
+                                    <div class="single_service_right">
+                                        <h2>GEPS</h2>
+                                        <p>全球系集預報模式，是以20組系集成員預測未來45天的形式之預報產品，其中也包含不同層場(溫度，濕度和氣壓等)。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="single_service2">
+                                    <div class="single_service_left">
+                                        <img src="assets/images/flaticon.png" alt="" />
+                                    </div>
+                                    <div class="single_service_right">
+                                        <h2>圖表改良</h2>
+                                        <p>在圖表中系集成員的資訊以及時間變化的資訊都沒能呈現出來，因此我設計當點選地圖上的任意點，會呈現出該點之系集預報結果。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="single_service2">
+                                    <div class="single_service_left">
+                                        <img src="assets/images/flaticon.png" alt="" />
+                                    </div>
+                                    <div class="single_service_right">
+                                        <h2>圖表分析</h2>
+                                        <p>藉由圖表可以分析未來三天不同區域的溫度變化，溫差以及海陸差異，圖表經過改良後可以明顯得到溫差的資訊。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="single_service2">
+                                    <div class="single_service_left">
+                                        <img src="assets/images/flaticon.png" alt="" />
+                                    </div>
+                                    <div class="single_service_right">
+                                        <h2>資料說明</h2>
+                                        <p>因為資料較大故只使用一個層場以及72小時資料做演示。
+                                        </br>中央氣象局並沒有公開資料因此使用美國國家海洋暨大氣總署公開之資料
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End of Service2 Section -->		
+
+
+
+        <!-- Sections -->
+
+
+
+        <div class="scrollup">
+            <a href="#"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/modernizr.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="https://d3js.org/d3.v6.js"></script>    
+        <script src="assets/D3/conrec.js"></script>    
+        <script src="assets/D3/data.js"></script>         
+        <script src="assets/js/colorlegend.js"></script> 
+        <script type="text/javascript" src="assets/D3/Vis.js"></script>        
+               
+    </body>
+</html>
